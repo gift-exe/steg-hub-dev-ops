@@ -53,7 +53,7 @@ __2.__ __Install Nginx__
 ```
 sudo apt install nginx -y
 ```
-![Install Apache2](./images/install-nginx.png)
+![Install nginx](./images/install-nginx.png)
 
 __3.__ __Enable NGINX and Verify that it is running__
 ```
@@ -139,10 +139,10 @@ __1.__ __Install php.__
 To set up php on the server, we would need to install:
 * php package
 * php-mysql _(this is a PHP module that allows PHP to communicate with MySQL databases)_
-* libapache2-mod-php _(this helps Apache to handle and understand PHP files)
+* libnginx-mod-php _(this helps Apache to handle and understand PHP files)
 to get this all set up in the machine, run:
 ```
-sudo apat install php libapache2-mod-php php-fpm php-mysql
+sudo apat install php libnginx-mod-php php-fpm php-mysql
 ```
 ![Set up PHP on the machine](./images/php-install.png)
 
