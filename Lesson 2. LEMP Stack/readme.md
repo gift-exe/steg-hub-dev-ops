@@ -2,7 +2,7 @@
 
 ### Introduction:
 
-__The LEMP stack is a very well-known web development platform, it is open source and it is made up of four main components which are: Linux, Apache, MySQL, and PHP (sometimes Perl or Python). This documentation shows how to setup, configure and use the LEMP stack for your consumption.__
+__The LEMP stack is a very well-known web development platform, it is open source and it is made up of four main components which are: Linux, NGINX, MySQL, and PHP (sometimes Perl or Python). This documentation shows how to setup, configure and use the LEMP stack for your consumption.__
 
 ## Step 0: Getting Ready
 
