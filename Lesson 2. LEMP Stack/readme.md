@@ -64,7 +64,7 @@ after runnnig the `systemctl status` command, if the output has the green indica
 
 Note: You typically do not need to explicitly enable nginx, after installing it, it starts automatically. We were just playing it extra safe.
 
-![Apache status after installation](./images/nginx-status.png)
+![NGINX status after installation](./images/nginx-status.png)
 
 
 __4.__ __Verify that the server is running and can be accessed locally via ubuntu shell by running this command__
@@ -74,11 +74,11 @@ OR
 curl http://127.0.0.1:80
 ```
 
-__5.__ __Test if you can access the default page apache serves on server by trying to access your EC2 public IP via a browser__
+__5.__ __Test if you can access the default page NGINX serves on server by trying to access your EC2 public IP via a browser__
 ```
 http://51.20.126.228
 ```
-![Apache default page served on you EC2 machine](./images/nginx-home.png)
+![NGINX default page served on you EC2 machine](./images/nginx-home.png)
 This indicates that the web server has been correctly installed and is now accessible through the firewall.
 
 ## Step 2 - Install MySQL
@@ -139,7 +139,7 @@ __1.__ __Install php.__
 To set up php on the server, we would need to install:
 * php package
 * php-mysql _(this is a PHP module that allows PHP to communicate with MySQL databases)_
-* libnginx-mod-php _(this helps Apache to handle and understand PHP files)
+* libnginx-mod-php _(this helps NGINX to handle and understand PHP files)
 to get this all set up in the machine, run:
 ```
 sudo apat install php libnginx-mod-php php-fpm php-mysql
@@ -152,7 +152,7 @@ php -v
 ```
 ![Confirm PHP version](./images/verify-php.png)
 
-To test this setup, we need to setup an Apache Virtual host to hold the website's files and folders.
+To test this setup, we need to setup an NGINX Virtual host to hold the website's files and folders.
 _(Virtual Hosts makes it possible to have many/different websites located on one machine while abstracting this from the users.)_
 
 ## Step 4 - Configure NGINX for PHP
